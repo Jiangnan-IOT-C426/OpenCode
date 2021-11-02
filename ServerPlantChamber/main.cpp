@@ -92,6 +92,7 @@ DWORD WINAPI ReceiveMessageThread(LPVOID IpParameter)
     while(1){     //When the TCP connection with the client is normal, always receive messages from the client
 		unsigned char recvBuf[300];	
         unsigned int temperature = 0;unsigned int humid=0;unsigned int light=0;unsigned int dioxide=0;
+		unsigned int flour = 0;
        	char tem[10];char hum[10];char lig[10];char dio[10];  		 
         int t=recv(ClientSocket, (char*)recvBuf , sizeof(recvBuf), 0); //Receive the message sent by the client recvBuf is the received content t is the received length
         recvBuf[t]='\0'; 
