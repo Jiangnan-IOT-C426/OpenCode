@@ -9,6 +9,7 @@ public class Client {
 		TCPClient a = new TCPClient();
 		String result="";
 		result = a.Control_Operator("Tem_0030");  	%Example of control temperature
+		%result = a.Control_Operator("Tem_0000");  	%Example of control temperature
 		System.out.println(result);
 	}
 	

@@ -1,3 +1,8 @@
+
+% [Note: ¡°Select_Parameter¡± and :Control_Operator¡± -- the data query command and control command
+% T is Chlorophyll a fluorescence control interval ; 
+% x is the total experiment time and y is the target chlorophyll a fluorescence signal ]
+
 T = 30;
 x=0:T:T*40+T;
 for i=1:42

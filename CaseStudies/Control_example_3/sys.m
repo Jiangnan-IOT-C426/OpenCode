@@ -1,3 +1,6 @@
+%The following is the photosynthesis model composed of 7 state variables, after Feng et al. (2018).
+
+
 function dy=sys(y,b,u)
 dy=zeros(6,1);
 dy(1)=u*b(1)*(290-y(1))-b(2)*y(1)-b(3)*(1+y(6))*y(1)-b(4)*(1-y(2))*y(1)+b(5)*y(2)*(290-y(1));

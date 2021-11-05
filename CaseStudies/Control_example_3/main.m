@@ -1,3 +1,13 @@
+%[ Note: T is for QA- control interval;
+%xx is the total experiment time; 
+%y_SetValue is the target QA- signal; 
+%b is the photosynthesis model parameter;
+%Q, R and P0 are the Extended Kalman filter initial values; 
+%x(:,1) is the photosynthesis model initial value; 
+%and x_ekf is used to store the state estimate value at all control moments.]
+
+
+
 T = 30;
 xx=0:T:T*41;
 for i=1:42

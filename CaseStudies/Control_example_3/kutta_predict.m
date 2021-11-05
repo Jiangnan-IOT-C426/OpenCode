@@ -1,3 +1,8 @@
+%[ Note” Num is the estimate of  the QA- interval;
+%  y1 is the state estimate based on the model; 
+% F is the chlorophyll a fluorescence value output based on the model.]
+
+
 function [ys,F]=kutta_predict(u,b,yx)
 Num=30;
 y=zeros(7,100000*Num);

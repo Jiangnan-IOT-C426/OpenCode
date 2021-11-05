@@ -1,3 +1,5 @@
+%[ Note” y2 is the state estimate based on the model, and J is the matrix of the state equation.]
+
 function J=JacobianF(u,b,x)
 y=zeros(7,7);
 J=zeros(7,7);
